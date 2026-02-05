@@ -1,0 +1,129 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.popup-content {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.popup-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f7fafc;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.popup-close:hover {
+  background: #e2e8f0;
+}
+
+.popup-content h2 {
+  font-size: 24px;
+  color: #1a202c;
+  margin-bottom: 16px;
+}
+
+.job-info {
+  background: #f7fafc;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.job-info h3 {
+  font-size: 18px;
+  color: #2d3748;
+  margin-bottom: 4px;
+}
+
+.job-info p {
+  color: #718096;
+  font-size: 14px;
+}
+
+.popup-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-option {
+  padding: 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.btn-applied {
+  background: #c6f6d5;
+  color: #22543d;
+  border-color: #9ae6b4;
+}
+
+.btn-applied:hover {
+  background: #9ae6b4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
+}
+
+.btn-earlier {
+  background: #fefcbf;
+  color: #744210;
+  border-color: #faf089;
+}
+
+.btn-earlier:hover {
+  background: #faf089;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(236, 201, 75, 0.3);
+}
+
+.btn-browsing {
+  background: #edf2f7;
+  color: #4a5568;
+  border-color: #e2e8f0;
+}
+
+.btn-browsing:hover {
+  background: #e2e8f0;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .popup-content {
+    padding: 24px;
+  }
+
+  .popup-content h2 {
+    font-size: 20px;
+  }
+}
