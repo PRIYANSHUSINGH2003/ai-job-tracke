@@ -31,7 +31,7 @@ A full-stack application that uses AI to match jobs with user resumes and provid
 │                                                                 │
 │  ┌────────────────────────────────────────────────────────┐     │
 │  │                   API Endpoints                        │     │
-│  │  /auth/login  /resume/upload  /jobs  /applications    │      │
+│  │  /auth/login  /resume/upload  /jobs  /applications     │     │
 │  │  /ai/chat                                              │     │
 │  └────────────────────────────────────────────────────────┘     │
 │                                                                 │
